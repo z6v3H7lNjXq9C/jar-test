@@ -1,12 +1,13 @@
+# jar-test
 
-# 编译
+## 编译
 
 1. 编译成jar包：`kotlinc Example.kt -include-runtime -d app/example.jar`
 2. 看jar包是否正常：`.\jdk\bin\java.exe -jar .\app\example.jar`
 
-# 打包
+## 打包
 
-## jpackage
+### jpackage
 
 目录结构
 
@@ -19,15 +20,15 @@ project/
 │   └── (解压后的 JDK 文件)
 ```
 
-### 使用自己的jdk 安装版
+#### 使用自己的jdk 安装版
 
 jpackage.exe --type exe --input ./app --name test1 --icon .\app.ico --win-console --win-shortcut --win-dir-chooser --main-jar example.jar --runtime-image .\jdk
 
-### 使用自己的jdk 便携版
+#### 使用自己的jdk 便携版
 
 jpackage.exe --type app-image --input ./app --name test1 --icon .\app.ico --win-console --main-jar example.jar --runtime-image .\jdk
 
-## launch4j
+### launch4j
 
 > [官网](https://launch4j.sourceforge.net)
 
