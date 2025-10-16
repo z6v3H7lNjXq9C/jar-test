@@ -1,0 +1,8 @@
+.vscode
+.vscode/
+*.exe
+*.jar
+test1/
+jdk/
+launch4j/
+app/
