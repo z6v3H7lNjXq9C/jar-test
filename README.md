@@ -21,6 +21,10 @@ jpackage \
 
 ## jpackage 
 
+
+
+目录结构
+
 ```text
 project/
 ├── app/
@@ -31,18 +35,10 @@ project/
 ```
 
 
-`jpackage.exe --input . --name iot-server-1.0.0 --icon .\app.ico --win-console --win-shortcut --win-dir-chooser --main-jar .\iot-server-1.0.0.jar`
-
-
-
-jpackage --type exe --name YourAppName --input app --main-jar example.jar --runtime-image jdk --icon .\app.ico --output output
-
-
-
-## 使用自己的jdk 安装版
+### 使用自己的jdk 安装版
 jpackage.exe --type exe --input ./app --name test1 --icon .\app.ico --win-console --win-shortcut --win-dir-chooser --main-jar example.jar --runtime-image .\jdk
 
-## 使用自己的jdk 便携版
+### 使用自己的jdk 便携版
 jpackage.exe --type app-image --input ./app --name test1 --icon .\app.ico --win-console --main-jar example.jar --runtime-image .\jdk
 
 
